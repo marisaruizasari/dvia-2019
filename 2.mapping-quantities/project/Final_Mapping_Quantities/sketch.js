@@ -4,8 +4,8 @@ let tumblerAble, rangerBaker, albertaLittleBoy, albertaFatMan, dominicMesilla, i
 
 let data = [];
 
-
-let colors = ['#9C4C4F77', '#76BDDB66', '#59AC8D77', '#DE905477', '#BFC95177','#0B1F3677']
+let kmBlast = ["1.68 mi²","6.72 mi²","10.2 mi²","12.8 mi²","36.2 mi²","106 mi²","415 mi²","688.29 mi²"];
+let colors = ['#9C4C4F77', '#76BDDB66', '#59AC8D77', '#DE905477', '#BFC95177','#0B1F3677'];
 // let colors = ['#66c2a5', '#fc8d62', '#8da0cb', '#e78ac3', '#a6d854','#e41a1c']
 
 // scaling variables
@@ -301,6 +301,12 @@ text(`| Test year ${dataOnView.testYear}`, padding+340+30+textWidth(`Test name: 
 if (shown != 2) {
   text(`| ${(parseFloat(parseFloat(dataOnView.kT)/15)*100).toFixed(0)}% of the size of the Hiroshima Bomb`,padding+340+40+textWidth(`Test name: ${dataOnView.testName}`)+textWidth(`| ${dataOnView.kT} kilotons`)+textWidth(`| Test year ${dataOnView.testYear}`),160)
 }
+pop();
+
+push();
+textAlign(LEFT);
+textSize(15);
+text(`Air Blast Radius: ${kmBlast[shown]}`, padding+340,195);
 pop();
 
 push();
