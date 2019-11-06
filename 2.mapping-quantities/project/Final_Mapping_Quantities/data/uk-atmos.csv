@@ -1,0 +1,22 @@
+﻿country,id,series,shot,year,month,day,time,site,lat,lon,height,groundheight,type,purpose,yieldmin,yieldmax,yieldest,yield,seismic,crater
+uk,1,Hurricane,Hurricane,1952,10,3,0:59:24,MB,-20.397,115.5584,-2.7,-12,AW-BG,WE,25,,,25,,270
+uk,2,Totem,Totem T1,1953,10,14,21:30,SAU-EF,-28.6985,132.3716,31,300,AS-T,WR,10,,,10,,
+uk,3,Totem,Totem T2,1953,10,26,21:30,SAU-EF,-28.7123,132.3773,31,310,AS-T,WR,8,,,8,,
+uk,4,Mosaic,Mosaic G1,1956,5,16,3:50,MB,-20.3819,115.5479,31,4,AS-T,WR?,15,,,15,,
+uk,5,Mosaic,Mosaic G2,1956,6,19,2:14,MB,-20.4061,115.5361,31,8,AS-T,,60,,98,98,,
+uk,6,Buffalo,Buffalo R1/One Tree,1956,9,27,7:30,SAU-MR,-29.8688,131.6594,31,180,AS-T,,15,,,15,,
+uk,7,Buffalo,Buffalo R2/Marcoo,1956,10,4,7:00,SAU-MR,-29.8818,131.6247,0.2,180,AS,WE,1.5,,,1.5,,50
+uk,8,Buffalo,Buffalo R3/Kite,1956,10,11,5:57,SAU-MR,-29.888,131.65,150,180,A-AD,WR,3,,,3,,
+uk,9,Buffalo,Buffalo R4/Breakaway,1956,10,22,14:35,SAU-MR,-29.8929,131.6048,31,190,AS-T,,10,,,10,,
+uk,10,Grapple,Grapple 1/Short Granite,1957,5,15,19:37,LI-MI,-4.05,-154.9,2400,,A-AD,WR?,300,,125,300,,
+uk,11,Grapple,Grapple 2/Orange Herald,1957,5,31,19:41,LI-MI,-4.05,-154.9,2300,,A-AD,WR?,720,,175,720,,
+uk,12,Grapple,Grapple 3/Purple Granit,1957,6,19,19:40,LI-MI,-4.05,-154.9,2300,,A-AD,WR?,200,,88,200,,
+uk,13,Antler,Antler Round 1/Tadje,1957,9,14,5:05,SAU-MR,-29.8898,131.6467,31,180,AS-T,WR?,1,,0.93,0.93,,
+uk,14,Antler,Antler Round 2/Biak,1957,9,25,0:30,SAU-MR,-29.8926,131.6176,31,180,AS-T,WR?,6,,,6,,
+uk,15,Antler,Antler Round 3/Taranaki,1957,10,9,6:45,SAU-MR,-29.8948,131.5916,300,180,A-B,WR?,25,,26.6,26.6,,
+uk,16,Grapple X,Grapple X/Round C,1957,11,8,17:47,LI-CH,1.67,-157.25,2250,,A-AD,WR,1800,,300,1800,,
+uk,17,Grapple Y,Grapple Y,1958,4,28,19:05,LI-CH,1.67,-157.25,2350,,A-AD,WR,3000,,2000,3000,,
+uk,18,Grapple Z,Grapple Z/Pennant 2,1958,8,22,18:00,LI-CH,1.67,-157.25,450,,A-B,WR,24,,34,24,,
+uk,19,Grapple Z,Grapple Z/Flagpole 1,1958,9,2,17:24,LI-CH,1.67,-157.25,2850,,A-AD,WR,1000,,2750,1000,,
+uk,20,Grapple Z,Grapple Z/Halliard 1,1958,9,11,17:49,LI-CH,1.67,-157.25,2650,,A-AD,WR,800,,2750,800,,
+uk,21,Grapple Z,Grapple Z/Burgee 2,1958,9,23,18:00,LI-CH,1.67,-157.25,450,,A-B,WR,25,,34,25,,
