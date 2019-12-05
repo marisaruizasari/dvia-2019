@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Roboto+Condensed:400,400i,700|Source+Sans+Pro:400,400i,600,600i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../libraries/leaflet/leaflet.css" /> <!-- default styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+
+<main>
+
+    <section id='scrolly'>
+
+
+    			<article>
+    				<div class='step' data-step='1'>
+              <h3>Earthquake Hotspotting</h3>
+    					<p>This visualization explores earthquake hotspots using data from the US Geological Survey (USGS) on global seismic activity within the last month. Each orange circle represents an earthquake within the last 30 days. Magnitude is represented by circle radius, and depth is represented by the darkness of the circle. </p>
+              <img src="scroll-img-01.png" alt="scroll image" height="50px">
+            </div>
+    				<div class='step' data-step='2'>
+              <h3>Riverside</h3>
+              <div class="chart"></div>
+              <div class="bubble"></div>
+              <p></p>
+    				</div>
+    				<div class='step' data-step='3'>
+              <h3>San Diego</h3>
+              <p></p>
+    				</div>
+    				<div class='step' data-step='4'>
+    					<h3>San Jose</h3>
+    				</div>
+            <div class='step' data-step='5'>
+    					<h3>San Francisco</h3>
+    				</div>
+            <div class='step' data-step='6'>
+    					<h3>Tijuana</h3>
+    				</div>
+            <div class='step' data-step='7'>
+    					<h3>Las Vegas</h3>
+    				</div>
+    			</article>
+
+    			<figure>
+            <div class="map-container">
+              <div id="pr-map"></div>
+            </div>
+    				<p>0</p>
+    			</figure>
+    		</section>
+</main>
+
+<script src="../libraries/cities.js"></script>
+<script src="../libraries/leaflet/leaflet.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script> -->
+<script src="../libraries/p5.min.js"></script>
+<script src="../libraries/lodash.min.js"></script>
+<script src="../libraries/brewer.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
