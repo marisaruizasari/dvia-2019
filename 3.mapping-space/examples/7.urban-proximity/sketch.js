@@ -21,7 +21,7 @@ function setup() {
     var y = yPos + r*20
     var x = xPos
     text(row.getString('mag'), x, y)
-    
+
     x+= 40
     text(row.getString('place'), x, y)
 

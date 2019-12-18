@@ -166,4 +166,3 @@ function columnMax(tableObject, columnName){
 function columnMin(tableObject, columnName){
     return _.min(columnValues(tableObject, columnName))
 }
-

@@ -13,7 +13,7 @@ function setup() {
 
   // convert the raw geoJSON feed we loaded from the USGS into a plain array of objects
   var quakes = unpackJSON(jsonData)
-  
+
   /* try uncommenting the next line and sorting by different attribute */
   // quakes = sortQuakes(quakes, 'depth') // '-depth' means sort from deepest to shallowest
   quakes = sortQuakes(quakes, '-mag') // 'mag' means sort from smallest to largest
@@ -53,7 +53,7 @@ function setup() {
       // move to next row
       translate(0, 32)
     }
-    
+
   }
 
 }
@@ -61,17 +61,17 @@ function setup() {
 
 
 function unpackJSON(feed, sortAttr){
-  // Converts the USGS's geojson feed into an array of quake objects and optionally sorts them 
+  // Converts the USGS's geojson feed into an array of quake objects and optionally sorts them
   // based on the specified attribute name (if present)
   //
   // Each object in the list contains the following attributes:
-  //    longitude, latitude, depth, mag, place, time, updated, tz, url, 
-  //    detail, felt, cdi, mmi, alert, status, tsunami, sig, net, code, 
+  //    longitude, latitude, depth, mag, place, time, updated, tz, url,
+  //    detail, felt, cdi, mmi, alert, status, tsunami, sig, net, code,
   //    ids, sources, types, nst, dmin, rms, gap, magType, type,
-  // 
+  //
   // See the ComCat documentation page for details on what each attribute encodes:
   //    https://earthquake.usgs.gov/data/comcat/data-eventterms.php
-  // 
+  //
   let quakes = _.map(feed.features, item => {
     let [longitude, latitude, depth] = item.geometry.coordinates
     return _.extend({longitude, latitude, depth}, item.properties)
@@ -80,16 +80,16 @@ function unpackJSON(feed, sortAttr){
 }
 
 function sortQuakes(quakeArray, sortAttr){
-  // Sorts an array of quake objects based on the attribute name you supply. 
-  // 
+  // Sorts an array of quake objects based on the attribute name you supply.
+  //
   // By default the list of quakes returned by the function will be sorted in ascending order.
-  // If you pass an attribute name with a '-' at the start of it, the quakes will be sorted in 
+  // If you pass an attribute name with a '-' at the start of it, the quakes will be sorted in
   // descending order instead. e.g.,
-  // 
+  //
   //    var quakes = unpackJSON(jsonData)
   //    var chronological = sortQuakes(quakes, 'time')
   //    var reverseChron = sortQuakes(quakes, '-time')
-  // 
+  //
   var sorted = _.sortBy(quakeArray, _.trim(sortAttr,'-'))
   return _.startsWith(sortAttr, '-') ? _.reverse(sorted) : sorted
 }
@@ -103,4 +103,3 @@ function minValue(quakeArray, attr){
   // searches through all the quakes in an array to find the smallest value for a particular attribute
   return _.min(_.map(quakeArray, attr))
 }
-

@@ -1,0 +1,124 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Roboto+Condensed:400,400i,700|Source+Sans+Pro:400,400i,600,600i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../libraries/leaflet/leaflet.css" /> <!-- default styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+
+<body>
+  <div class="city-tooltip overpassfont"></div>
+
+  <div class="background">
+    <div class="load-msg">
+      <p>Calculating Hotspots</p>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <main>
+
+      <section id='scrolly'>
+
+            <div class="overview-graphs">
+              <h2 class="overview-title">
+                Top 10 Hotspot Cities
+              </h2>
+              <div class="overview-charts">
+                <div class="city-bar">
+                  <h3 class="city-graph-title">Seismic Activity</h3>
+                  <h4 class="y-axis-text overpassfont">Cumulative Magnitude</h4>
+                </div>
+                <div class="city-bubble">
+                  <h3 class="city-graph-title">City Profiles</h3>
+                  <h4 class="x-axis-text">30 day quake count</h4>
+                  <h4 class="y-axis-text overpassfont">City Elevation (km)</h4>
+                </div>
+              </div>
+            </div>
+      			<article>
+      				<div class='step' data-step='1'>
+                <div class="landing">
+                  <h3>Earthquake Hotspotting</h3>
+        					<p>This visualization identifies urban earthquake hotspots using data from the US Geological Survey (USGS) on global seismic activity within the last 30 days. Cities with populations greater than 500,000 are filtered by the count of seismic events within a 50 km radius in the past month. Start by exploring an overview of the top ten earthquake hotspots on the left, or scroll to learn more about the earquakes near each city.</p>
+                  <img src="legend.png" class="legend-img" alt="">
+                  <img src="scroll-img-01.png" class="scroll-img" alt="scroll image" height="50px">
+                </div>
+              </div>
+      				<div class='step' data-step='2'>
+                <h3></h3>
+                <div class="chart"></div>
+                <div class="bubble"></div>
+                <p></p>
+      				</div>
+      				<div class='step' data-step='3'>
+                <h3></h3>
+                <div class="bubble"></div>
+                <p></p>
+      				</div>
+      				<div class='step' data-step='4'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='5'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='6'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='7'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='8'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='9'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='10'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+              <div class='step' data-step='11'>
+      					<h3></h3>
+                <div class="bubble"></div>
+      				</div>
+      			</article>
+
+      			<figure>
+              <div class="map-container">
+                <div id="map"></div>
+              </div>
+      				<!-- <p>0</p> -->
+      			</figure>
+      		</section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/79341ce47f.js" crossorigin="anonymous"></script>
+  <script src="libraries/lodash.min.js"></script>
+  <script src="libraries/leaflet/leaflet.js"></script>
+  <script src="libraries/leaflet-geometryutil.js"></script>
+  <script src="libraries/moment.js"></script>
+  <script src="libraries/cities.js"></script>
+  <script src="libraries/chroma.min.js"></script>
+  <script src="libraries/p5.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+</body>
+</html>
