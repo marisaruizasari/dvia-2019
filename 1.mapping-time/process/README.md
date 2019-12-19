@@ -1,6 +1,7 @@
 # Process
 This readme describes the process for weeks 02-04 clock and date sketches
 
+
 ## Week 04 In-Class Hybrid Sketches
 
 **1. Alopecia**
@@ -126,3 +127,7 @@ In this sketch the background ellipses move based on the hour, the lines move fr
 **In progress result:**
 
 ![](images/Week02/lines_ellipse_screenshot.png)
+
+## Final Coded Hybrid Result 
+
+![](images/final-hybrid.gif)
